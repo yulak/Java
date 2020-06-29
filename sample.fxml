@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #B0C4DE;" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+
+    <Button fx:id="sendMassage" onAction="#clickSendMassage" style="-fx-background-color: white;" text="Отправить" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button fx:id="clearDialogue" onAction="#clickClearDialogue" style="-fx-background-color: white;" text="Очистить" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <TextField fx:id="massage" promptText="Введите сообщение" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <TextArea fx:id="dialogue" promptText="Сообщений пока нет" />
+
+</GridPane>
